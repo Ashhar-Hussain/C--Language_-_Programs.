@@ -10,8 +10,12 @@ int main()
 	int e;
 	int ans;
 	int choice;
-	
-	
+	int mainChoice; // variable to deal with the main do-while
+		
+		do 
+		{
+			
+		
 		cout<<"\nEnter the first number to be operated\n";
 		cin>>a;
 		
@@ -20,9 +24,6 @@ int main()
 		
 		cout<<"\nPress 1 to add above two numbers\nPress 2 to subtarct above two numbers\nPress 3 to multiply above two numbers\nPress 4 to divide above numbers\nPress 5 to find the square-root of the given numbers as per choice\nPress 6 to find the cosine value of above given numbers as per choice\nPress 7 to find the sin value of above given numbers as per choice\n";
 		cin>>choice;
-		
-		do 
-		{
 		
 		 switch(choice)
 			{
@@ -101,8 +102,10 @@ int main()
 				default:
 					cout<<"\nInvalid choice inputed\n";
 					break;						
-	        }	   
+	        }	
+			cout<<"Do you want to continue? Press 0 to Exit and 1 to continue";
+			cin>>mainChoice;
 		}
-		while(true);		
-		return 0;
+		while(mainChoice!=0);	
+		
 }
