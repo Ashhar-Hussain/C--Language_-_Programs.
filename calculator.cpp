@@ -16,45 +16,45 @@ int main()
 		{
 			
 		
-		cout<<"\nEnter the first number to be operated\n";
+		cout<<"\t\nEnter the first number to be operated\n\t";
 		cin>>a;
 		
-		cout<<"\nEnter the second number to be operated\n";
+		cout<<"\t\nEnter the second number to be operated\n\t";
 		cin>>b;
 		
-		cout<<"\nPress 1 to add above two numbers\nPress 2 to subtarct above two numbers\nPress 3 to multiply above two numbers\nPress 4 to divide above numbers\nPress 5 to find the square-root of the given numbers as per choice\nPress 6 to find the cosine value of above given numbers as per choice\nPress 7 to find the sin value of above given numbers as per choice\n";
+		cout<<"\t\nPress 1 to add above two numbers\nPress 2 to subtarct above two numbers\nPress 3 to multiply above two numbers\nPress 4 to divide above numbers\nPress 5 to find the square-root of the given numbers as per choice\nPress 6 to find the cosine value of above given numbers as per choice\nPress 7 to find the sin value of above given numbers as per choice\n\t";
 		cin>>choice;
 		
 		 switch(choice)
 			{
 				case 1:
-					cout<<a+b;
+					cout<<"The sum of two given numbers is "<<a+b;
 					break;
 				case 2:
-					cout<<a-b;
+					cout<<"The subtract of two given numbers is "<<a-b;
 					break;
 				case 3:
-					cout<<a*b;
+					cout<<"The multilpy of two given numbers is "<<a*b;
 					break;
 				case 4:
-					cout<<a/b;
+					cout<<"The divide of two given numbers is "<<a/b;
 					break;
 				case 5:
 				    do
 				    {				
-					cout<<"\nFor finding the square-root of the first entered number press 1\nFor finding the square-root of the second entered number press 2\n";
+					cout<<"\t\nFor finding the square-root of the first entered number press 1\nFor finding the square-root of the second entered number press 2\n\t";
 					cin>>c;
 					if(c==1)
 					{
-						cout<<"\nThe square-root of the first entered number is \n"<<sqrt(a);
+						cout<<"\t\nThe square-root of the first entered number is \n\t"<<sqrt(a);
 					}
 					if(c==2)
 					{
-						cout<<"\nThe square-root of the second entered number is \n"<<sqrt(b);
+						cout<<"\t\nThe square-root of the second entered number is \n\t"<<sqrt(b);
 					}
 					if( c != 1 && c != 2 )
 					{
-						cout<<" \nWRONG INPUTED\n ";
+						cout<<" \t\nWRONG INPUTED\n\t ";
 					}
 				    }
 					while( c != 1 && c != 2 );
@@ -62,19 +62,19 @@ int main()
 				case 6:
 					do
 					{					
-						cout<<"\nFor finding the cosine value of the first entered number press 1\nFor finding the cosine value of the second entered number press 2\n";
+						cout<<"\t\nFor finding the cosine value of the first entered number press 1\nFor finding the cosine value of the second entered number press 2\n\t";
 						cin>>d;
 						if(d==1)
 						{
-							cout<<"\nThe cosine value of the first entered number is \n"<<cos(a);
+							cout<<"\t\nThe cosine value of the first entered number is \n\t"<<cos(a);
 						}
 						if(d==2)
 						{
-							cout<<"\nThe cosine value of the second entered number is \n"<<cos(b);
+							cout<<"\t\nThe cosine value of the second entered number is \n\t"<<cos(b);
 						}
 						if( d != 1 && d != 2 )
 						{
-							cout<<" \nWRONG INPUTED\n ";
+							cout<<" \t\nWRONG INPUTED\n\t ";
 						}
 					}
 					while( d != 1 && d != 2 );
@@ -82,28 +82,28 @@ int main()
 				case 7:
 					do
 					{					
-						cout<<"\nFor finding the sin value of the first entered number press 1\nFor finding the sin value of the second entered number press 2\n";
+						cout<<"\t\nFor finding the sin value of the first entered number press 1\nFor finding the sin value of the second entered number press 2\n\t";
 						cin>>e;
 						if(e==1)
 						{
-							cout<<"\nThe sin value of the first entered number is \n"<<sin(a);
+							cout<<"\t\nThe sin value of the first entered number is \n\t"<<sin(a);
 						}
 						if(e==2)
 						{
-							cout<<"\nThe sin value of the second entered number is \n"<<sin(b);
+							cout<<"\t\nThe sin value of the second entered number is \n\t"<<sin(b);
 						}
 						if( e != 1 && e != 2 )
 						{
-							cout<<" \nWRONG INPUTED\n ";
+							cout<<" \t\nWRONG INPUTED\n\t ";
 						}
 					}
 				 	while( e != 1 && e != 2 );
 					break;														
 				default:
-					cout<<"\nInvalid choice inputed\n";
+					cout<<"\t\nInvalid choice inputed\n\t";
 					break;						
 	        }	
-			cout<<"Do you want to continue? Press 0 to Exit and 1 to continue";
+			cout<<"\t\nDo you want to continue?\nPress 0 to Exit and any other number to continue\n\t";
 			cin>>mainChoice;
 		}
 		while(mainChoice!=0);	
